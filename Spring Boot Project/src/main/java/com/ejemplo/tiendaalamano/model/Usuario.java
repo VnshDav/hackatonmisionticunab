@@ -24,6 +24,15 @@ public class Usuario implements Serializable{
 	@Column(length = 25, nullable=false)
 	private String password;
 	
+	
+	public Usuario() {}
+	
+	public Usuario(Long id, String username, String password) {
+		super();
+		this.id = id;
+		this.username = username;
+		this.password = password;
+	}
 	public Long getId() {
 		return id;
 	}
