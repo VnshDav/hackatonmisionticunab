@@ -22,20 +22,9 @@ import com.ejemplo.tiendaalamano.service.PuntoService;
 	    @Autowired 
 	    PuntoService Service;
 
-	    
+	  
+		}
 
-	    @PostMapping(value = "/Punto_de_ventas", consumes = "application/json")
-	    @ResponseStatus(HttpStatus.CREATED)
-	    public void (@RequestBody @Validated MarcaModel nuevaMarca) {
-	       Service.crearMarca(nuevaMarca);
-	    }
-
-	    @RequestMapping(value = "/marcas/{id}", method = RequestMethod.DELETE)
-	    @ResponseStatus(HttpStatus.OK)
-	    public String eliminarById(@PathVariable int id) {
-	        marcaService.eliminarMarcaById(id);
-	        return "La ha eliminado la categoria con de id: " + id;
-	    }
-	}
 	
-}
+	    
+	 

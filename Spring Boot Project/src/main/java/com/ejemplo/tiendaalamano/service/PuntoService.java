@@ -14,7 +14,7 @@ public class PuntoService {
  	    @Autowired
 	    private PuntoRepository puntoRepo;
 
-	    public void save(Punto nuevoPunto) {
+	    public save(Punto nuevoPunto) {
 	    	puntoRepo.save(nuevoPunto);
 			
 	    }
